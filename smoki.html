@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoki</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <header>
+        <h2>Poznaj smoki!</h2>
+    </header>
+    <section id="con">
+        <nav>
+            <section id="Blok1" onclick="Baza()">
+                Baza
+            </section>
+            <section id="Blok2" onclick="Opisy()">
+                Opisy
+            </section>
+            <section id="Blok3" onclick="Galeria()">
+                Galeria
+            </section>
+        </nav>
+        <main>
+            <section id="Sekcja1">
+                <h3>Baza Smoków</h3>
+                <form>
+                    <select></select>
+                    <input type="submit" value="Szukaj">
+                </form>
+                <table>
+                    <thead>
+                        <th>Nazwa</th>
+                        <th>Długość</th>
+                        <th>Szerokość</th>
+                    </thead>
+                </table>
+            </section>
+            <section id="Sekcja2">
+                <h3>Opisy smoków</h3>
+                <dl>
+                    <dt>Smok czerwony</dt>
+                    <dd>Pochodzi z Chin. Ma 1000 lat. Żywi się mniejszymi zwierzętami. Posiada łuski cenne na rynkach wschodnich do wyrabiania lekarstw. Jest dziki i groźny.</dd>
+                    <dt>Smok czerwielkiwony</dt>
+                    <dd>Pochodzi z Bułgarii. Ma 10000 lat. Żywi się mniejszymi zwierzętami, ale tylko w kolorze zielonym. Jest kosmaty. Z sierści zgubionej przez niego, tka się najdroższe materiały.</dd>
+                    <dt>Skrzydlaty łaciaty</dt>
+                    <dd>Pochodzi z Francji. Ma 100 lat. Żywi się owocami morza. Jest natchnieniem dla najlepszych malarzy. Często im pozuje. Smok ten jest przyjacielem ludzi i czasami im pomaga. Jest jednak próżny i nie lubi się przepracowywać.</dd>
+                </dl>
+            </section>
+            <section id="Sekcja3">
+                <h3>Galeria</h3>
+                <img src="smok1.JPG" alt="Smok czerwony">
+                <img src="smok2.JPG" alt="Smok wielki">
+                <img src="smok3.JPG" alt="Skrzydlaty łaciaty">
+            </section>
+        </main>
+    </section>
+    <footer>
+        <p>Stronę opracował: Marcin</p>
+    </footer>
+    <script>
+        let pierwszy = document.getElementById('Blok1')
+        let drugi = document.getElementById('Blok2')
+        let trzeci = document.getElementById('Blok3')
+        let stabela = document.getElementById('Sekcja1')
+        let sopis = document.getElementById('Sekcja2')
+        let sgaleria = document.getElementById('Sekcja3')
+        function Baza(){
+            pierwszy.style.backgroundColor="Mistyrose"
+            drugi.style.backgroundColor="#FFAEA5"
+            trzeci.style.backgroundColor="#FFAEA5"
+            stabela.style.display="block"
+            sopis.style.display="none"
+            sgaleria.style.display="none"
+        }
+        function Opisy(){
+            pierwszy.style.backgroundColor="#FFAEA5"
+            drugi.style.backgroundColor="Mistyrose"
+            trzeci.style.backgroundColor="#FFAEA5"
+            stabela.style.display="none"
+            sopis.style.display="block"
+            sgaleria.style.display="none"
+        }
+        function Galeria(){
+            pierwszy.style.backgroundColor="#FFAEA5"
+            drugi.style.backgroundColor="#FFAEA5"
+            trzeci.style.backgroundColor="Mistyrose"
+            stabela.style.display="none"
+            sopis.style.display="none"
+            sgaleria.style.display="block"
+        }
+    </script>   
+</body>
+</html>
